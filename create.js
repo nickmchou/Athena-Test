@@ -15,7 +15,6 @@ export async function main(event, context) {
             noteId: uuid.v1(), // A unique uuid
             content: data.content, // Parsed from request body
             attachment: data.attachment, // Parsed from request body
-
             createdAt: Date.now(), // Current Unix timestamp
         },
     };
@@ -34,4 +33,3 @@ export async function main(event, context) {
         };
     }
 }
-
